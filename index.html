@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casel Bilişim - Teknoloji Çözümleri</title>
+    <style>
+        /* Sitenin Genel Tasarım Ayarları */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50; /* Koyu Lacivert */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .showcase {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .showcase h2 {
+            color: #2c3e50;
+        }
+        .btn {
+            display: inline-block;
+            background: #e74c3c; /* Kırmızı Buton */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            flex-basis: 30%;
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Mobilde düzgün görünmesi için ayar */
+        @media(max-width: 768px) {
+            .container { width: 95%; }
+            .service-box { flex-basis: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Casel Bilişim</h1>
+            <p>Geleceğin Teknolojisi, Bugünün Çözümleri</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="showcase">
+            <h2>Hoş Geldiniz</h2>
+            <p>Casel Bilişim olarak, bilişim dünyasında ihtiyaç duyduğunuz yazılım ve donanım sorunlarına çözümler sunuyoruz.</p>
+            <a href="mailto:iletisim@caselbilisim.com" class="btn">Bize Ulaşın</a>
+        </section>
+
+        <section class="services">
+            <div class="service-box">
+                <h3>Web Tasarım</h3>
+                <p>Modern, hızlı ve mobil uyumlu web siteleri tasarlıyoruz. İşinizi internete taşıyın.</p>
+            </div>
+            <div class="service-box">
+                <h3>Teknik Destek</h3>
+                <p>Donanım ve yazılım sorunlarınızda 7/24 profesyonel teknik destek hizmeti.</p>
+            </div>
+            <div class="service-box">
+                <h3>Danışmanlık</h3>
+                <p>Dijital dönüşüm süreçlerinizde size yol gösteriyor, stratejiler geliştiriyoruz.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Casel Bilişim &copy; 2025 - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
