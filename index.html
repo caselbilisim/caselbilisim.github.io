@@ -32,7 +32,7 @@
             font-size: 1.1rem;
         }
         .container {
-            width: 80%;
+            width: 90%;
             max-width: 800px;
             margin: auto;
             overflow: hidden;
@@ -54,26 +54,41 @@
             color: #2c3e50;
             margin-bottom: 20px;
         }
+        
+        /* BUTON AYARLARI */
         .btn {
             display: inline-block;
-            background: #e74c3c;
+            background: #e74c3c; /* Kırmızı */
             color: #fff;
-            padding: 15px 30px;
+            padding: 15px 40px; /* Butonu biraz genişlettim */
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 50px; /* Köşeleri yuvarladım, daha modern oldu */
             font-weight: bold;
-            font-size: 1.5rem; /* Numara daha büyük görünsün */
-            transition: background 0.3s ease;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, background 0.2s;
         }
         .btn:hover {
             background: #c0392b;
+            transform: scale(1.05); /* Üzerine gelince hafif büyür */
         }
-        .info-text {
-            margin-top: 15px;
+
+        /* NUMARA GÖRÜNÜM AYARLARI */
+        .phone-display {
+            margin-top: 25px;
+            color: #2c3e50;
+        }
+        .phone-display h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .phone-display p {
             font-size: 0.9rem;
-            color: #666;
+            color: #777;
+            margin-top: 5px;
         }
+
         footer {
             background-color: #2c3e50;
             color: #fff;
@@ -95,11 +110,17 @@
     <div class="container">
         <section class="showcase">
             <h2>İletişim</h2>
-            <p>Yazılım, donanım ve teknik destek ihtiyaçlarınız için bize ulaşın.</p>
+            <p style="margin-bottom: 30px;">Yazılım, donanım ve teknik destek ihtiyaçlarınız için bize ulaşın.</p>
             
-            <a href="tel:+905102226074" class="btn">📞 05XX XXX XX XX</a>
-            
-            <p class="info-text">Numaranın üzerine tıklayarak arayabilirsiniz.</p>
+            <a href="tel:+905102226074" class="btn">
+                📞 Bize Ulaşın
+            </a>
+
+            <div class="phone-display">
+                <h3>05102226074</h3>
+                <p>(Numarayı kaydetmek veya aramak için tıklayın)</p>
+            </div>
+
         </section>
     </div>
 
