@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casel Bilişim - Teknoloji Çözümleri</title>
+    <title>Casel Bilişim</title>
     <style>
         /* Sitenin Genel Tasarım Ayarları */
         body {
@@ -13,11 +13,14 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #2c3e50; /* Koyu Lacivert */
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
         }
         header h1 {
@@ -31,66 +34,58 @@
         }
         .container {
             width: 80%;
+            max-width: 800px;
             margin: auto;
             overflow: hidden;
             padding: 20px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .showcase {
             background-color: #fff;
-            padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: center;
+            width: 100%;
         }
         .showcase h2 {
             color: #2c3e50;
+            margin-bottom: 20px;
         }
         .btn {
             display: inline-block;
             background: #e74c3c; /* Kırmızı Buton */
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.3rem; /* Numarayı büyüttüm */
+            transition: background 0.3s ease;
         }
         .btn:hover {
             background: #c0392b;
         }
-        .services {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .service-box {
-            flex-basis: 30%;
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
+        .call-icon {
+            margin-right: 10px;
         }
         footer {
             background-color: #2c3e50;
             color: #fff;
             text-align: center;
             padding: 20px;
-            margin-top: 20px;
-        }
-        
-        /* Mobilde düzgün görünmesi için ayar */
-        @media(max-width: 768px) {
-            .container { width: 95%; }
-            .service-box { flex-basis: 100%; }
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="container">
+        <div style="width: 90%; margin:auto;">
             <h1>Casel Bilişim</h1>
             <p>Geleceğin Teknolojisi, Bugünün Çözümleri</p>
         </div>
@@ -98,29 +93,15 @@
 
     <div class="container">
         <section class="showcase">
-            <h2>Hoş Geldiniz</h2>
-            <p>Casel Bilişim olarak, bilişim dünyasında ihtiyaç duyduğunuz yazılım ve donanım sorunlarına çözümler sunuyoruz.</p>
-            <a href="mailto:iletisim@caselbilisim.com" class="btn">Bize Ulaşın</a>
-        </section>
-
-        <section class="services">
-            <div class="service-box">
-                <h3>Web Tasarım</h3>
-                <p>Modern, hızlı ve mobil uyumlu web siteleri tasarlıyoruz. İşinizi internete taşıyın.</p>
-            </div>
-            <div class="service-box">
-                <h3>Teknik Destek</h3>
-                <p>Donanım ve yazılım sorunlarınızda 7/24 profesyonel teknik destek hizmeti.</p>
-            </div>
-            <div class="service-box">
-                <h3>Danışmanlık</h3>
-                <p>Dijital dönüşüm süreçlerinizde size yol gösteriyor, stratejiler geliştiriyoruz.</p>
-            </div>
+            <h2>İletişim</h2>
+            <p>Yazılım, donanım ve teknik destek ihtiyaçlarınız için bize doğrudan ulaşabilirsiniz.</p>
+            
+            <a href="tel:+905102226074" class="btn">📞 Hemen Ara</a>
         </section>
     </div>
 
     <footer>
-        <p>Casel Bilişim &copy; 2025 - Tüm Hakları Saklıdır.</p>
+        <p>Casel Bilişim &copy; 2025</p>
     </footer>
 
 </body>
